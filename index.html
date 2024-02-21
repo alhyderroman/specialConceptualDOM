@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="menu-container">
+        <h3> Budget: <span class="price-color" id="budget">2500</span>$</h3>
+        <h3>Cart: <span class="price-color" id="cart">0</span></h3>
+        <h3>Left: <span class="price-color" id="left">6</span></h3>
+    </div>
+    <div class="main-container">
+        <!-- players container -->
+        <div class="players-container">
+            <div class="player-btn">
+                <h5>Tamim Iqbal</h5>
+                <h5>Price <span>300</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="add-btn">Add to cart</button>
+            </div>
+            <div class="player-btn">
+                <h5>Shakib Al Hasan</h5>
+                <h5>Price <span>300</span>$</h5>
+                <h5>Category <span>all rounder</span></h5>
+                <button class="add-btn">Add to cart</button>
+            </div>
+            <div class="player-btn">
+                <h5>Mushfiq</h5>
+                <h5>Price <span>200</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="add-btn">Add to cart</button>
+            </div>
+            <div class="player-btn">
+                <h5>Liton Das</h5>
+                <h5>Price <span>300</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="add-btn">Add to cart</button>
+            </div>
+            <div class="player-btn">
+                <h5>Shanto</h5>
+                <h5>Price <span>400</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="add-btn">Add to cart</button>
+            </div>
+            <div class="player-btn">
+                <h5>Mustafiz</h5>
+                <h5>Price <span>400</span>$</h5>
+                <h5>Category <span>Ball</span></h5>
+                <button class="add-btn">Add to cart</button>
+            </div>
+            <div class="player-btn">
+                <h5>Taskin</h5>
+                <h5>Price <span>400</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="add-btn">Add to cart</button>
+            </div>
+            <div class="player-btn">
+                <h5>Shariful</h5>
+                <h5>Price <span>300</span>$</h5>
+                <h5>Category <span>Bat</span></h5>
+                <button class="add-btn">Add to cart</button>
+            </div>
+
+        </div>
+        <!-- cart container -->
+        <div class="cart-container">
+            <h2> My Cart</h2>
+            <hr/>
+            <div class="selected-players">
+                <div class="name">Name</div>
+                <div class="pirce">Price</div>
+                <div class="category">Category</div>
+            </div>
+            <div id="selected-players-container"></div>
+            <hr/>
+            <h3 class="padding">Total Cost: <span id="total-cost">0</span>$</h3>
+            <hr/>
+            <div class="coupon-code">
+                <input type="text" id="coupon-code" placeholder="Coupon Code">
+                <button onclick="updateGrandTotal('10');" id="apply-btn" class="apply-btn">Apply</button>
+            </div>
+            <hr/>
+            <h3 class="padding"> Grand Total: <span id="grand-total">0</span>$</h3>
+
+        </div>
+    </div>
+    
+    <script src="scripts/special.js"></script>
+</body>
+</html>
